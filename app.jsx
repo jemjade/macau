@@ -33,13 +33,14 @@ function App() {
       <LogoStrip />
       <Hero />
 
+      <People />
+
       <Schedule defaultView={t.scheduleView} />
 
       <PersonalSchedule />
 
       {t.showStripe && <div className="stripe" />}
 
-      <People />
       <Places />
       <MapSection />
       <InfoStrip />
