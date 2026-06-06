@@ -21,20 +21,21 @@ function useNow(interval = 1000) {
 }
 window.useNow = useNow;
 
-// Macau is UTC+8, Korea UTC+9. For demo we use local time as Macau time
-// (you can wire to a real TZ later).
-
 function TopBar() {
   const now = useNow(1000);
-  const hh = String(now.getHours()).padStart(2,'0');
-  const mm = String(now.getMinutes()).padStart(2,'0');
-  const ss = String(now.getSeconds()).padStart(2,'0');
+  const macauTime = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Asia/Macau',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false,
+  }).format(now);
   return (
     <div className="topbar">
       <div className="topbar-inner">
         <span className="dot" />
-        <span>LIVE · {hh}:{mm}:{ss}</span>
-        <span className="topbar-bib">BIB 2026</span>
+        <span>MACAU TIME · {macauTime}</span>
+        <span className="topbar-bib">UTC+8</span>
         <span className="topbar-spacer" />
         <nav>
           <a href="#schedule">SCHEDULE</a>
