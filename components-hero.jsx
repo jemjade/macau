@@ -137,11 +137,7 @@ function Hero() {
       <div className="cover-frame">
         {/* Masthead */}
         <div className="cover-masthead">
-          <div className="left">VOL. VI · ISSUE 2026 · PRIVATE</div>
           <div className="center">Macao Government Tourism Office <em>×</em> New Balance Korea</div>
-          <div className="right">
-            <span className="live-dot" /> LIVE OPS · 운영중
-          </div>
         </div>
 
         {/* Issue dateline */}
@@ -160,7 +156,7 @@ function Hero() {
               <em>—</em>
               <span>Macau, a study in motion.</span>
             </div>
-            <h1>
+            <h1 className="motion-title">
               <span className="line">MACAU</span>
               <span className="line"><span className="serif-it">in</span> <span className="hot">MOTION</span></span>
               <span className="line stroke">런플 6기</span>

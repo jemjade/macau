@@ -1339,10 +1339,9 @@ footer {
 
 /* Top masthead strip — like a magazine */
 .cover-masthead {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 24px;
   padding: 14px 0;
   border-bottom: 1px solid var(--ink);
   font-family: var(--f-mono);
@@ -1350,7 +1349,6 @@ footer {
   text-transform: uppercase;
   letter-spacing: 0.18em;
 }
-.cover-masthead .left { text-align: left; color: var(--muted); }
 .cover-masthead .center {
   font-family: var(--f-serif);
   font-style: italic;
@@ -1359,15 +1357,6 @@ footer {
   letter-spacing: 0.04em;
   text-transform: none;
   color: var(--ink);
-}
-.cover-masthead .right {
-  text-align: right; color: var(--muted);
-  display: flex; justify-content: flex-end; align-items: center; gap: 12px;
-}
-.cover-masthead .live-dot {
-  width: 7px; height: 7px; border-radius: 50%; background: var(--hot);
-  animation: pulse 1.6s infinite;
-  display: inline-block;
 }
 
 /* Issue line */
@@ -1426,6 +1415,51 @@ footer {
 }
 .cover-headline h1 .line { display: block; }
 .cover-headline h1 .hot { color: var(--hot); }
+.motion-title {
+  position: relative;
+  isolation: isolate;
+  text-shadow:
+    0 0 18px color-mix(in oklch, var(--hot) 26%, transparent),
+    0 0 42px color-mix(in oklch, var(--hot) 16%, transparent);
+}
+.motion-title::before,
+.motion-title::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+}
+.motion-title::before {
+  inset: -8px -4px;
+  background:
+    linear-gradient(110deg, transparent 0 28%, rgba(255,255,255,.72) 38%, transparent 48% 100%),
+    repeating-linear-gradient(0deg, transparent 0 9px, color-mix(in oklch, var(--hot) 20%, transparent) 10px, transparent 11px);
+  mix-blend-mode: screen;
+  opacity: .55;
+  transform: translateX(-70%);
+  animation: titleSweep 4.8s ease-in-out infinite;
+}
+.motion-title::after {
+  width: 7px;
+  height: 7px;
+  right: 7%;
+  top: 14%;
+  border-radius: 50%;
+  background: var(--hot);
+  box-shadow:
+    -54px 48px 0 -2px color-mix(in oklch, var(--hot) 74%, white),
+    -18px 118px 0 -3px var(--ink),
+    34px 86px 0 -2px color-mix(in oklch, var(--hot) 58%, white);
+  animation: titleSpark 2.6s ease-in-out infinite;
+}
+.motion-title .hot {
+  background: linear-gradient(90deg, var(--hot), #f2efe7, var(--hot-deep), var(--hot));
+  background-size: 240% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: hotPulse 3.2s ease-in-out infinite;
+}
 .cover-headline h1 .stroke {
   -webkit-text-stroke: 1.5px var(--ink);
   color: transparent;
@@ -1633,14 +1667,11 @@ footer {
 @media (max-width: 720px) {
   .cover-frame { padding: 12px 18px 24px; }
   .cover-masthead {
-    grid-template-columns: 1fr auto;
-    gap: 10px;
     padding: 8px 0;
     font-size: 8px;
     letter-spacing: .1em;
   }
-  .cover-masthead .center { display: none; }
-  .cover-masthead .right { font-size: 8px; gap: 6px; }
+  .cover-masthead .center { font-size: 11px; }
   .cover-issue {
     padding: 10px 0 6px;
     font-size: 8px;
@@ -1665,6 +1696,13 @@ footer {
     font-size: clamp(50px, 18vw, 76px);
     line-height: .9;
     letter-spacing: -0.035em;
+  }
+  .motion-title::before { inset: -4px; }
+  .motion-title::after {
+    width: 5px;
+    height: 5px;
+    right: 5%;
+    top: 18%;
   }
   .cover-deck {
     margin-top: 14px;
@@ -1725,6 +1763,31 @@ footer {
   .cover-ticker .cell .l {
     font-size: 8px;
     letter-spacing: .08em;
+  }
+}
+
+@keyframes titleSweep {
+  0%, 18% { transform: translateX(-78%); opacity: 0; }
+  34%, 58% { opacity: .58; }
+  78%, 100% { transform: translateX(76%); opacity: 0; }
+}
+
+@keyframes titleSpark {
+  0%, 100% { opacity: .22; transform: translateY(0) scale(.82); }
+  45% { opacity: 1; transform: translateY(-4px) scale(1.14); }
+  70% { opacity: .42; transform: translateY(2px) scale(.92); }
+}
+
+@keyframes hotPulse {
+  0%, 100% { background-position: 0% 50%; filter: saturate(1); }
+  50% { background-position: 100% 50%; filter: saturate(1.25); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-title::before,
+  .motion-title::after,
+  .motion-title .hot {
+    animation: none;
   }
 }
 
