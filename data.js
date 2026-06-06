@@ -317,7 +317,6 @@ window.PHOTO_POOL = [
 ];
 
 window.PHOTO_MAP = {
-  "대장": "1iJEqJ8iZQzQPFxV84D1XJBaEGpfypt5A",
   "심새날": "1T1OWI4Kx33y8I803yqeESJzMVAid_LZV",
   "정채린": "1_jhG7eUS6VNi-lh00Mh0kp4X44NA8U9R",
   "박소영": "1ULaiqdEB7ELcld11SmXzhJ-nHh_lEri4",
@@ -333,7 +332,6 @@ window.PHOTO_MAP = {
 
 window.PHOTO_SHEET_ID = "1PewbIs_k_9FwtclNF6ofNpr9vqcwlFcqNPV3Tb7boVA";
 window.PHOTO_NAME_ALIASES = {
-  "비홍방": "대장",
   "민철": "철민",
 };
 
