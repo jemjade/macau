@@ -1,0 +1,169 @@
+# MACAU RUNFLUENCER 2026 - SAMPLE SHEET
+# 이 파일은 각 탭의 헤더 + 예시 행을 모은 샘플입니다.
+# 사용법: 구글 시트에서 각 탭을 만든 후, 해당 섹션의 헤더 행 + 데이터를 복사해서 붙여넣기.
+
+#### TAB: SCHEDULE ####
+day,date,day_label,day_title,time,end,title,sub,icon,desc,location,hero,rsvp
+1,2026-06-26,FRI,DEPARTURE · COTAI CITY RUN,07:00,,공항 집결,Incheon T1 · Jeju Air counter,📍,참가자 전원 인천국제공항 제1여객터미널 H 카운터 부근 집결.,ICN T1,FALSE,FALSE
+1,2026-06-26,FRI,DEPARTURE · COTAI CITY RUN,09:50,12:50,ICN → MFM,Jeju Air 7C2701 · 3h 50m,✈️,인천 → 마카오 국제공항. 시차 -1시간.,Flight 7C2701,FALSE,FALSE
+1,2026-06-26,FRI,DEPARTURE · COTAI CITY RUN,13:30,15:00,숙소 이동 / 체크인,Bus → StudioCity MACAO,🚌,전세버스 이동 후 단체 체크인.,StudioCity MACAO,FALSE,FALSE
+1,2026-06-26,FRI,DEPARTURE · COTAI CITY RUN,15:00,17:00,개인정비 / 자유시간,Free · 짐 풀기,💤,러닝 복장 준비 권장.,Hotel,FALSE,FALSE
+1,2026-06-26,FRI,DEPARTURE · COTAI CITY RUN,17:00,18:30,COTAI CITY RUN,Hero session · 6.5km,🏃,코타이 야경 라이트 런 6.5km. 헤드라이트 권장.,Cotai Strip,TRUE,FALSE
+1,2026-06-26,FRI,DEPARTURE · COTAI CITY RUN,18:30,19:30,개인정비,Free · 샤워 / 환복,🚿,디너 드레스코드 스마트 캐주얼.,Hotel,FALSE,FALSE
+1,2026-06-26,FRI,DEPARTURE · COTAI CITY RUN,19:30,21:30,네트워킹 디너,북방관 · BeiFangGuan,🍽️,단체 디너 + 인사말 + 자기소개.,북방관,TRUE,FALSE
+1,2026-06-26,FRI,DEPARTURE · COTAI CITY RUN,21:30,,자유시간,Free · Optional 야시장 / 카지노,✨,코타이 베니션 야경 산책 추천.,Free,FALSE,TRUE
+2,2026-06-27,SAT,TRY TRI MACAO,08:00,08:45,조식,Hotel breakfast,🥐,2일차 조식만 제공.,StudioCity Buffet,FALSE,FALSE
+2,2026-06-27,SAT,TRY TRI MACAO,08:45,,참가자 집결,★ 뉴발란스 필착,📍,뉴발란스 협찬 의류 필착. 단체 워밍업.,Hotel Lobby,TRUE,FALSE
+2,2026-06-27,SAT,TRY TRI MACAO,09:00,11:30,TRY TRI MACAO,🚴 BIKE → 🏃 RUN → 🏊 SWIM,🏆,자전거 8km + 러닝 3km + 수영 400m.,Cotai Sports Zone,TRUE,FALSE
+2,2026-06-27,SAT,TRY TRI MACAO,11:30,,자유시간,Free · 마카오 자유 일정,🌴,세나도 광장 / 성 바울 / 타이파 빌리지 / 마카오 타워 등.,Free,FALSE,TRUE
+3,2026-06-28,SUN,TAIPA HERITAGE RUN · 귀국,07:15,,참가자 집결,Lobby · 러닝 복장,📍,가벼운 워밍업 후 출발.,Hotel Lobby,FALSE,FALSE
+3,2026-06-28,SUN,TAIPA HERITAGE RUN · 귀국,07:30,09:00,TAIPA HERITAGE RUN,5km · 헤리티지 코스,🏃‍♀️,포르투갈식 골목과 광장 통과. 사진 스팟 다수.,Taipa Village,TRUE,FALSE
+3,2026-06-28,SUN,TAIPA HERITAGE RUN · 귀국,09:00,11:30,자유시간 / 체크아웃,개별 체크아웃 · 짐 호텔 보관,🧳,컨시어지 짐 보관.,Hotel,FALSE,FALSE
+3,2026-06-28,SUN,TAIPA HERITAGE RUN · 귀국,11:30,11:50,로비 집결 / 공항 이동,전세버스 · MFM 공항,🚌,전세버스로 공항 이동.,Hotel → MFM,FALSE,FALSE
+3,2026-06-28,SUN,TAIPA HERITAGE RUN · 귀국,13:50,18:40,MFM → ICN,Jeju Air 7C2702 · 귀국,✈️,마카오 → 인천 귀국.,Flight 7C2702,FALSE,FALSE
+3,2026-06-28,SUN,TAIPA HERITAGE RUN · 귀국,19:00,,인천 도착 / 해산,Incheon T1 · 해산,🏁,짐 찾고 자유 해산.,ICN T1,TRUE,FALSE
+
+
+#### TAB: PEOPLE ####
+bib,name,ig,role,lead,photo
+CAP,대장,goodbear_jang,Captain · 대장,TRUE,
+PHOTO,부대장,runningphotograph,Photographer · 작가님,TRUE,
+001,박수현,l.eauhyun,Runfluencer 6th,FALSE,
+002,철민,c_m0119,Runfluencer 6th,FALSE,
+003,으닝,euuuun._.ing,Runfluencer 6th,FALSE,
+004,정채린,chaeee_525,Runfluencer 6th,FALSE,
+005,체리핏,cherry_fit_25,Runfluencer 6th,FALSE,
+006,김신,kimshin_daily,Runfluencer 6th,FALSE,
+007,최윤경,c__yoooong,Runfluencer 6th,FALSE,
+008,박소영,ps.psy_,Runfluencer 6th,FALSE,
+009,심새날,senalworkout,Runfluencer 6th,FALSE,
+010,미나,_ji_mina,Runfluencer 6th,FALSE,
+011,정다영,santa._.dikey,Runfluencer 6th,FALSE,
+012,김슬기,s.eulk_,Runfluencer 6th,FALSE,
+013,김예솔,yeni_3color,Runfluencer 6th,FALSE,
+014,백경수,runner_g100,Runfluencer 6th,FALSE,
+015,추경식,sik__running,Runfluencer 6th,FALSE,
+016,홍지우,jiwooo_x,Runfluencer 6th,FALSE,
+017,유지선,z__sun_,Runfluencer 6th,FALSE,
+018,원예진,bobagrrrl,Runfluencer 6th,FALSE,
+019,김효희,joyyourtype,Runfluencer 6th,FALSE,
+020,김은비,_eunvitamin_,Runfluencer 6th,FALSE,
+
+
+#### TAB: PLACES ####
+type,name,desc,img,lat,lng,stat1_v,stat1_l,stat2_v,stat2_l,stat3_v,stat3_l
+Stay,STUDIOCITY MACAO,코타이 지구 5성급 호텔. 2일차 조식 포함.,,22.1463,113.5709,코타이,구역,2박,Days,Day 2,조식
+Run · Day 1,COTAI CITY RUN,코타이 스트립 야경 라이트 런.,,22.1481,113.5616,6.5,km,FLAT,코스,17:00,출발
+Sports · Day 2,TRY TRI MACAO,Bike + Run + Swim 미니 트라이애슬론.,,22.1455,113.5605,11.4,km,3,종목,09:00,출발
+Run · Day 3,TAIPA HERITAGE RUN,포르투갈식 골목 헤리티지 러닝.,,22.1556,113.5550,5.0,km,HILLY,지형,07:30,출발
+Dinner · Day 1,BEIFANG GUAN 北方館,북방식 만두 / 면 요리 전문점.,,22.1493,113.5645,19:30,시작,2h,예상,22,PAX
+Free Time,TAIPA VILLAGE,타이파 헤리티지 지구.,,22.1556,113.5550,FREE,,3km,from hotel,★★★,추천
+
+
+#### TAB: ANNOUNCEMENTS ####
+date,title,desc,pin
+MAY 18,뉴발란스 협찬 의류 발송,Day 2 'TRY TRI MACAO' 필착. 사이즈 미수령 인원 운영진 DM.,TRUE
+MAY 12,여권 만료일 확인 요청,출국 기준 6개월 이상 유효기간 필수입니다.,FALSE
+MAY 03,참가자 단톡 오픈,카카오톡 오픈채팅 링크 개별 발송.,FALSE
+APR 28,런플루언서 6기 모집 마감,최종 20인 확정. 환영합니다!,FALSE
+
+
+#### TAB: CHECKLIST ####
+category,item
+RUN GEAR,뉴발란스 러닝 셔츠 (필착)
+RUN GEAR,뉴발란스 러닝화
+RUN GEAR,러닝 양말 2-3족
+RUN GEAR,트라이슈트 또는 수영복
+RUN GEAR,수경 / 수영모
+RUN GEAR,헤드라이트 또는 발광 액세서리 (Day 1 야간)
+RUN GEAR,선글라스 · 모자
+RUN GEAR,땀밴드 / 암밴드 / 스포츠워치
+TRAVEL,여권 (유효기간 6개월 이상)
+TRAVEL,보딩패스 / 전자티켓
+TRAVEL,여행자보험 증서
+TRAVEL,환전 (MOP/HKD) 또는 트래블카드
+TRAVEL,전원 어댑터 (UK 3핀)
+TRAVEL,유심 또는 로밍
+TRAVEL,휴대용 충전기
+TRAVEL,캐리어 명찰
+PERSONAL,여름 옷 (2박3일)
+PERSONAL,디너용 스마트 캐주얼 1셋
+PERSONAL,수영복 / 비치 슬리퍼
+PERSONAL,선크림 SPF 50+
+PERSONAL,근육이완제 · 진통제
+PERSONAL,전해질 / 에너지젤
+PERSONAL,물병 / 텀블러
+PERSONAL,선글라스 케이스
+
+
+#### TAB: PERSONAL ####
+# slot ID: d1-night (Day1 21:30~) / d2-pm (Day2 11:30~) / d3-am (Day3 09:00~)
+# 같은 activity 글자 = 같은 그룹으로 자동 묶임
+name,slot,activity,note
+박수현,d1-night,베니션 야경 산책,21:30 로비
+철민,d1-night,베니션 야경 산책,21:30 로비
+으닝,d1-night,베니션 야경 산책,
+정채린,d1-night,베니션 야경 산책,
+최윤경,d1-night,베니션 야경 산책,
+김슬기,d1-night,베니션 야경 산책,
+김신,d1-night,코타이 야시장,택시 share
+박소영,d1-night,코타이 야시장,
+심새날,d1-night,코타이 야시장,
+정다영,d1-night,카지노 투어 · 갤럭시,ID 필수
+백경수,d1-night,카지노 투어 · 갤럭시,
+추경식,d1-night,카지노 투어 · 갤럭시,
+원예진,d1-night,카지노 투어 · 갤럭시,
+체리핏,d1-night,호텔 라운지 · 휴식,
+미나,d1-night,호텔 라운지 · 휴식,
+김예솔,d1-night,호텔 라운지 · 휴식,내일 트라이 컨디션
+홍지우,d1-night,호텔 라운지 · 휴식,
+유지선,d1-night,호텔 라운지 · 휴식,
+김효희,d1-night,호텔 라운지 · 휴식,
+김은비,d1-night,호텔 라운지 · 휴식,
+대장,d1-night,호텔 라운지 · 휴식,운영팀 회의
+부대장,d1-night,호텔 라운지 · 휴식,사진 편집
+박수현,d2-pm,세나도 광장 + 성 바울 성당,12:30 로비
+철민,d2-pm,세나도 광장 + 성 바울 성당,
+정채린,d2-pm,세나도 광장 + 성 바울 성당,
+최윤경,d2-pm,세나도 광장 + 성 바울 성당,
+김슬기,d2-pm,세나도 광장 + 성 바울 성당,
+유지선,d2-pm,세나도 광장 + 성 바울 성당,
+으닝,d2-pm,타이파 빌리지 푸드 투어,에그타르트 ★
+김신,d2-pm,타이파 빌리지 푸드 투어,
+박소영,d2-pm,타이파 빌리지 푸드 투어,
+김예솔,d2-pm,타이파 빌리지 푸드 투어,
+원예진,d2-pm,타이파 빌리지 푸드 투어,
+김효희,d2-pm,타이파 빌리지 푸드 투어,
+추경식,d2-pm,마카오 타워 번지점프,체중 60kg+
+백경수,d2-pm,마카오 타워 번지점프,
+홍지우,d2-pm,마카오 타워 번지점프,
+정다영,d2-pm,베니션 곤돌라,예약 필요
+체리핏,d2-pm,베니션 곤돌라,
+미나,d2-pm,베니션 곤돌라,
+심새날,d2-pm,수영장 · 호텔,
+김은비,d2-pm,수영장 · 호텔,
+대장,d2-pm,쇼핑 · 코타이 갤러리,
+부대장,d2-pm,쇼핑 · 코타이 갤러리,촬영 동행 가능
+박수현,d3-am,마지막 쇼핑 / 카페,
+철민,d3-am,마지막 쇼핑 / 카페,
+정채린,d3-am,마지막 쇼핑 / 카페,
+최윤경,d3-am,마지막 쇼핑 / 카페,
+박소영,d3-am,마지막 쇼핑 / 카페,
+으닝,d3-am,타이파 빌리지 재방문,사진 spot 재방문
+김슬기,d3-am,타이파 빌리지 재방문,
+김예솔,d3-am,타이파 빌리지 재방문,
+유지선,d3-am,타이파 빌리지 재방문,
+원예진,d3-am,타이파 빌리지 재방문,
+부대장,d3-am,타이파 빌리지 재방문,단체 사진
+김신,d3-am,호텔 휴식,
+심새날,d3-am,호텔 휴식,
+체리핏,d3-am,호텔 휴식,
+미나,d3-am,호텔 휴식,
+정다영,d3-am,호텔 휴식,
+백경수,d3-am,호텔 휴식,
+추경식,d3-am,호텔 휴식,
+홍지우,d3-am,호텔 휴식,
+김효희,d3-am,호텔 휴식,
+김은비,d3-am,호텔 휴식,
+대장,d3-am,호텔 휴식,체크아웃 컨트롤
+

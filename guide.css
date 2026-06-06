@@ -1,0 +1,270 @@
+/* Guide page — matches site aesthetic but more print/document-style */
+
+body.guide {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 0;
+}
+.guide-wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+.guide-back {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--f-mono); font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  margin-bottom: 32px;
+  color: var(--muted);
+  border-bottom: 1px solid var(--muted);
+  padding-bottom: 2px;
+}
+.guide-back:hover { color: var(--ink); border-color: var(--ink); }
+
+.guide-hd {
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 24px;
+  margin-bottom: 40px;
+}
+.guide-hd .doc-num {
+  font-family: var(--f-mono); font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--muted);
+}
+.guide-hd h1 {
+  font-family: var(--f-display);
+  font-size: clamp(36px, 6vw, 64px);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  margin: 8px 0 14px;
+  text-transform: uppercase;
+}
+.guide-hd h1 .hot { color: var(--hot); }
+.guide-hd .lead {
+  font-size: 16px;
+  max-width: 60ch;
+  color: var(--ink);
+}
+
+.guide-toc {
+  background: var(--paper-2);
+  border: 1px solid var(--ink);
+  padding: 18px 22px;
+  margin-bottom: 50px;
+}
+.guide-toc h3 {
+  font-family: var(--f-mono); font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.14em;
+  margin: 0 0 10px;
+  color: var(--muted);
+}
+.guide-toc ol {
+  margin: 0; padding-left: 0; list-style: none;
+  counter-reset: toc;
+}
+.guide-toc ol li {
+  counter-increment: toc;
+  padding: 4px 0;
+  font-size: 14px;
+}
+.guide-toc ol li::before {
+  content: counter(toc, decimal-leading-zero) ". ";
+  font-family: var(--f-mono); font-weight: 700;
+  color: var(--hot); margin-right: 6px;
+}
+
+h2.s {
+  font-family: var(--f-display);
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  margin: 50px 0 8px;
+  padding-top: 30px;
+  border-top: 1px solid var(--ink);
+}
+h2.s .step {
+  font-family: var(--f-mono);
+  font-size: 14px; color: var(--hot);
+  font-weight: 700; letter-spacing: 0.12em;
+  display: block; margin-bottom: 6px;
+}
+
+h3.ss {
+  font-family: var(--f-display);
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  margin: 24px 0 8px;
+}
+
+.guide-wrap p { margin: 0 0 12px; }
+.guide-wrap p code, .guide-wrap li code {
+  font-family: var(--f-mono);
+  background: var(--paper-2);
+  padding: 1px 6px;
+  font-size: 13px;
+  border: 1px solid rgba(10,9,8,.15);
+}
+.guide-wrap ul, .guide-wrap ol {
+  padding-left: 22px;
+  margin: 0 0 18px;
+}
+.guide-wrap li { padding: 3px 0; }
+
+/* code block */
+pre {
+  background: var(--ink); color: var(--paper);
+  padding: 18px 20px;
+  font-family: var(--f-mono); font-size: 12.5px;
+  line-height: 1.55;
+  overflow-x: auto;
+  margin: 14px 0 22px;
+  position: relative;
+  border: 1px solid var(--ink);
+}
+pre .c { color: oklch(0.7 0.04 80); }
+pre .k { color: oklch(0.85 0.22 130); }
+pre .s { color: oklch(0.78 0.14 30); }
+pre .n { color: oklch(0.75 0.15 220); }
+pre code { font-family: inherit; background: none; padding: 0; border: 0; color: inherit; }
+.copy {
+  position: absolute; top: 8px; right: 8px;
+  background: rgba(242,239,231,.15);
+  color: var(--paper);
+  font-family: var(--f-mono); font-size: 10px;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  padding: 3px 8px;
+  cursor: pointer;
+  border: 1px solid rgba(242,239,231,.3);
+}
+.copy:hover { background: rgba(242,239,231,.25); }
+.copy.copied { background: var(--hot); border-color: var(--hot); }
+
+/* Sheet schema tables */
+.schema {
+  margin: 14px 0 30px;
+  border: 1px solid var(--ink);
+  overflow-x: auto;
+}
+.schema-hd {
+  background: var(--ink); color: var(--paper);
+  padding: 12px 16px;
+  font-family: var(--f-mono); font-size: 12px;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  display: flex; justify-content: space-between; align-items: baseline;
+}
+.schema-hd .tag {
+  background: var(--hot); color: white;
+  padding: 2px 8px;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+}
+table.cols {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+table.cols th, table.cols td {
+  padding: 8px 14px;
+  text-align: left;
+  border-bottom: 1px solid rgba(10,9,8,.12);
+  vertical-align: top;
+}
+table.cols th {
+  font-family: var(--f-mono); font-size: 10px;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  background: var(--paper-2);
+  color: var(--muted);
+  font-weight: 600;
+  white-space: nowrap;
+}
+table.cols td.col-name {
+  font-family: var(--f-mono);
+  font-weight: 700;
+  color: var(--hot);
+}
+table.cols td.col-type {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+table.cols td.col-req { font-family: var(--f-mono); font-size: 11px; }
+table.cols td.col-req.req { color: var(--hot); font-weight: 700; }
+
+/* example values */
+.eg {
+  margin-top: -22px;
+  padding: 14px 20px;
+  background: var(--paper-2);
+  border: 1px solid var(--ink);
+  border-top: 0;
+  font-family: var(--f-mono);
+  font-size: 11.5px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  white-space: pre;
+}
+.eg .k { color: var(--hot); }
+
+/* CTA */
+.cta {
+  background: var(--ink); color: var(--paper);
+  padding: 24px;
+  margin: 30px 0;
+  display: flex; gap: 18px; align-items: center;
+}
+.cta .ico {
+  font-family: var(--f-display); font-size: 32px;
+  color: var(--hot); line-height: 1;
+}
+.cta h4 {
+  font-family: var(--f-display);
+  font-size: 20px;
+  margin: 0 0 4px;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+.cta p { margin: 0; font-size: 13px; opacity: .8; }
+.cta a {
+  margin-left: auto;
+  background: var(--hot); color: white;
+  padding: 10px 14px;
+  font-family: var(--f-mono); font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.callout {
+  background: var(--paper-2);
+  border-left: 4px solid var(--hot);
+  padding: 14px 18px;
+  margin: 14px 0 22px;
+  font-size: 13.5px;
+}
+.callout strong { font-weight: 700; }
+
+hr.rule {
+  border: 0;
+  height: 1px;
+  background: var(--ink);
+  margin: 40px 0;
+}
+
+.guide-foot {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid var(--ink);
+  display: flex; justify-content: space-between;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
