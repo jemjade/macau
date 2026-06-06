@@ -168,7 +168,7 @@ window.CHECKLIST = {
 };
 
 window.ANNOUNCEMENTS = [
-  { date: "MAY 18", pin: true, title: "뉴발란스 협찬 의류 발송", desc: "Day 2 'TRY TRI MACAO' 필착. 사이즈 미수령 인원 운영진 DM 부탁드려요." },
+  { date: "JUN 07", pin: true, title: "의류 배포 및 OT", desc: "Day 2 'TRY TRI MACAO' 필착. 사이즈 미수령 인원 운영진 DM 부탁드려요." },
   { date: "MAY 12", pin: false, title: "여권 만료일 확인 요청", desc: "출국 기준 6개월 이상 유효기간 필수입니다. 미확인 인원 5/20까지 회신 주세요." },
   { date: "MAY 03", pin: false, title: "참가자 단톡 오픈", desc: "운영진이 카카오톡 오픈채팅 링크 개별 발송했습니다. 미수령 인원 알려주세요." },
   { date: "APR 28", pin: false, title: "런플루언서 2026 모집 마감", desc: "최종 20인 확정. 환영합니다 🎉" }
