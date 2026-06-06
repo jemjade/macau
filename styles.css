@@ -1417,48 +1417,40 @@ footer {
 .cover-headline h1 .hot { color: var(--hot); }
 .motion-title {
   position: relative;
-  isolation: isolate;
-  text-shadow:
-    0 0 18px color-mix(in oklch, var(--hot) 26%, transparent),
-    0 0 42px color-mix(in oklch, var(--hot) 16%, transparent);
 }
-.motion-title::before,
-.motion-title::after {
-  content: '';
-  position: absolute;
-  pointer-events: none;
-  z-index: -1;
-}
-.motion-title::before {
-  inset: -8px -4px;
-  background:
-    linear-gradient(110deg, transparent 0 28%, rgba(255,255,255,.72) 38%, transparent 48% 100%),
-    repeating-linear-gradient(0deg, transparent 0 9px, color-mix(in oklch, var(--hot) 20%, transparent) 10px, transparent 11px);
-  mix-blend-mode: screen;
-  opacity: .55;
-  transform: translateX(-70%);
-  animation: titleSweep 4.8s ease-in-out infinite;
-}
-.motion-title::after {
-  width: 7px;
-  height: 7px;
-  right: 7%;
-  top: 14%;
-  border-radius: 50%;
-  background: var(--hot);
-  box-shadow:
-    -54px 48px 0 -2px color-mix(in oklch, var(--hot) 74%, white),
-    -18px 118px 0 -3px var(--ink),
-    34px 86px 0 -2px color-mix(in oklch, var(--hot) 58%, white);
-  animation: titleSpark 2.6s ease-in-out infinite;
-}
+.motion-title .line:not(.stroke),
 .motion-title .hot {
-  background: linear-gradient(90deg, var(--hot), #f2efe7, var(--hot-deep), var(--hot));
-  background-size: 240% 100%;
+  background:
+    linear-gradient(
+      100deg,
+      var(--ink) 0%,
+      var(--hot-deep) 28%,
+      var(--hot) 48%,
+      #e7efe8 58%,
+      var(--hot) 68%,
+      var(--ink) 100%
+    );
+  background-size: 260% 100%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: hotPulse 3.2s ease-in-out infinite;
+  animation: titleGradient 5.2s ease-in-out infinite;
+}
+.motion-title .hot {
+  background:
+    linear-gradient(
+      100deg,
+      var(--hot-deep) 0%,
+      var(--hot) 28%,
+      #f2efe7 48%,
+      #80bca2 58%,
+      var(--hot) 76%,
+      var(--hot-deep) 100%
+    );
+  background-size: 280% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .cover-headline h1 .stroke {
   -webkit-text-stroke: 1.5px var(--ink);
@@ -1697,13 +1689,6 @@ footer {
     line-height: .9;
     letter-spacing: -0.035em;
   }
-  .motion-title::before { inset: -4px; }
-  .motion-title::after {
-    width: 5px;
-    height: 5px;
-    right: 5%;
-    top: 18%;
-  }
   .cover-deck {
     margin-top: 14px;
     font-size: 13px;
@@ -1766,26 +1751,13 @@ footer {
   }
 }
 
-@keyframes titleSweep {
-  0%, 18% { transform: translateX(-78%); opacity: 0; }
-  34%, 58% { opacity: .58; }
-  78%, 100% { transform: translateX(76%); opacity: 0; }
-}
-
-@keyframes titleSpark {
-  0%, 100% { opacity: .22; transform: translateY(0) scale(.82); }
-  45% { opacity: 1; transform: translateY(-4px) scale(1.14); }
-  70% { opacity: .42; transform: translateY(2px) scale(.92); }
-}
-
-@keyframes hotPulse {
-  0%, 100% { background-position: 0% 50%; filter: saturate(1); }
-  50% { background-position: 100% 50%; filter: saturate(1.25); }
+@keyframes titleGradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .motion-title::before,
-  .motion-title::after,
+  .motion-title .line:not(.stroke),
   .motion-title .hot {
     animation: none;
   }
