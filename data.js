@@ -68,7 +68,7 @@ window.PEOPLE = [
   { bib: "007", name: "최윤경", ig: "c__yoooong", role: "Runfluencer 6th" },
   { bib: "008", name: "박소영", ig: "ps.psy_", role: "Runfluencer 6th" },
   { bib: "009", name: "심새날", ig: "senalworkout", role: "Runfluencer 6th" },
-  { bib: "010", name: "미나", ig: "_ji_mina", role: "Runfluencer 6th" },
+  { bib: "010", name: "미나", ig: "orona_mina", role: "Runfluencer 6th" },
   { bib: "011", name: "정다영", ig: "santa._.dikey", role: "Runfluencer 6th" },
   { bib: "012", name: "김슬기", ig: "s.eulk_", role: "Runfluencer 6th" },
   { bib: "013", name: "김예솔", ig: "yeni_3color", role: "Runfluencer 6th" },

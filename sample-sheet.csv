@@ -37,7 +37,7 @@ PHOTO,부대장,runningphotograph,Photographer · 작가님,TRUE,
 007,최윤경,c__yoooong,Runfluencer 6th,FALSE,
 008,박소영,ps.psy_,Runfluencer 6th,FALSE,
 009,심새날,senalworkout,Runfluencer 6th,FALSE,
-010,미나,_ji_mina,Runfluencer 6th,FALSE,
+010,미나,orona_mina,Runfluencer 6th,FALSE,
 011,정다영,santa._.dikey,Runfluencer 6th,FALSE,
 012,김슬기,s.eulk_,Runfluencer 6th,FALSE,
 013,김예솔,yeni_3color,Runfluencer 6th,FALSE,
@@ -166,4 +166,3 @@ name,slot,activity,note
 김효희,d3-am,호텔 휴식,
 김은비,d3-am,호텔 휴식,
 대장,d3-am,호텔 휴식,체크아웃 컨트롤
-
