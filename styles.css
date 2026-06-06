@@ -195,10 +195,9 @@ a { color: inherit; text-decoration: none; }
 
 @media (max-width: 720px) {
   .logo-strip-inner {
-    gap: 8px 12px;
+    gap: 8px;
     padding: 10px 18px;
     flex-wrap: nowrap;
-    justify-content: space-between;
   }
   .logo-strip-inner .sup-by {
     padding-right: 8px;
@@ -206,9 +205,11 @@ a { color: inherit; text-decoration: none; }
     width: auto;
     font-size: 8px;
     letter-spacing: .12em;
+    margin-right: auto;
   }
   .logo-strip-inner .logo-x { display: none; }
   .logo-tile { width: auto; gap: 6px; min-width: 0; }
+  .logo-tile.mgto { margin-left: auto; }
   .mgto-mark {
     width: 28px;
     height: 28px;
@@ -1418,7 +1419,7 @@ footer {
 .motion-title {
   position: relative;
 }
-.motion-title .line:not(.stroke),
+.motion-title .line:not(.stroke):not(.korean-title),
 .motion-title .hot {
   background:
     linear-gradient(
@@ -1455,6 +1456,31 @@ footer {
 .cover-headline h1 .stroke {
   -webkit-text-stroke: 1.5px var(--ink);
   color: transparent;
+}
+.cover-headline h1 .korean-title {
+  display: inline-block;
+  margin-top: .05em;
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  text-transform: none;
+  background:
+    linear-gradient(
+      100deg,
+      #0a0908 0%,
+      #4d5850 20%,
+      #f2efe7 42%,
+      var(--hot) 56%,
+      #2c473d 78%,
+      #0a0908 100%
+    );
+  background-size: 260% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: titleGradient 6.4s ease-in-out infinite;
+  filter: contrast(1.05);
 }
 .cover-headline h1 .serif-it {
   font-family: var(--f-serif);
@@ -1757,7 +1783,8 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .motion-title .line:not(.stroke),
+  .motion-title .line:not(.stroke):not(.korean-title),
+  .motion-title .korean-title,
   .motion-title .hot {
     animation: none;
   }

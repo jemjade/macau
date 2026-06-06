@@ -153,13 +153,11 @@ function Hero() {
             <div className="cover-eyebrow">
               <span className="rule" />
               <span>The <span className="accent">Sixth</span> Class of Runfluencers</span>
-              <em>—</em>
-              <span>Macau, a study in motion.</span>
             </div>
             <h1 className="motion-title">
               <span className="line">MACAU</span>
               <span className="line"><span className="serif-it">in</span> <span className="hot">MOTION</span></span>
-              <span className="line stroke">런플 6기</span>
+              <span className="line korean-title">런플 6기</span>
             </h1>
             <p className="cover-deck">
               마카오 관광청 × 뉴발란스 협찬 <strong>런플루언서 6기</strong> 20인의 자유여행.
