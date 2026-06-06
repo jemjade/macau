@@ -15,6 +15,7 @@ function App() {
   React.useEffect(() => {
     const h = () => setReload(n => n + 1);
     window.addEventListener('sheet-loaded', h);
+    h();
     return () => window.removeEventListener('sheet-loaded', h);
   }, []);
 
